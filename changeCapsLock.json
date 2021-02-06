@@ -1,0 +1,29 @@
+{
+  "title": "Change caps_lock key",
+  "rules": [
+    {
+      "description": "Change caps_lock key to Control+Space(Switch lang)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
